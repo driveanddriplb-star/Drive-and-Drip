@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drive & Drip — Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <img src="Drive And Drip.png" alt="Drive and Drip logo" class="logo">
+        <span class="brand-text">Drive <span class="accent">&</span> Drip</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#top">Menu</a>
+        <a href="#addons">Add-ons</a>
+        <a href="https://wa.me/96176717577" target="_blank" class="nav-whatsapp">
+  <i class="fab fa-whatsapp"></i> Contact Us
+</a>
+
+
+
+      </nav>
+
+      <button class="cart-btn" id="openCartBtn" type="button">
+        🛒 Cart <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div>
+        <p class="tag">Coffee on the move </p>
+        <h1>Menu</h1>
+        <p class="sub">Fresh coffee. Fast drive. Big drip energy.</p>
+      </div>
+
+      <div class="hero-card">
+        <div class="search-wrap">
+          <input id="searchInput" type="text" placeholder="Search: latte, mocha, croissant..." />
+          <button id="clearBtn" class="btn ghost" type="button">Clear</button>
+        </div>
+
+        <div class="filters" id="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="espresso">Espresso Bar</button>
+          <button class="chip" data-filter="iced">Iced Coffee</button>
+          <button class="chip" data-filter="blended">Frappé & Blended</button>
+          <button class="chip" data-filter="tea">Tea & More</button>
+          <button class="chip" data-filter="refreshers">Refreshers</button>
+          <button class="chip" data-filter="bakery">Bakery</button>
+          <button class="chip" data-filter="snacks">Breakfast & Snacks</button>
+          <button class="chip" data-filter="addons">Add-ons</button>
+        </div>
+
+        <p class="hint">Tip: use search + filter together.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <main class="container">
+
+    <!-- Espresso Bar -->
+    <section class="section" data-section="espresso">
+      <div class="section-head">
+        <h2>☕ Espresso Bar</h2>
+        <p class="muted">Sizes: Small / Large</p>
+      </div>
+
+      <div class="grid">
+        <article class="item" data-category="espresso" data-name="Espresso (Single)" data-price="2.00">
+          <div class="item-top"><h3>Espresso (Single)</h3><span class="price">$2.00</span></div>
+          <p class="desc">Bold and clean shot.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="espresso" data-name="Espresso (Double)" data-price="3.00">
+          <div class="item-top"><h3>Espresso (Double)</h3><span class="price">$3.00</span></div>
+          <p class="desc">Double the drip.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="espresso" data-name="Americano" data-price="3.00">
+          <div class="item-top"><h3>Americano</h3><span class="price">$3.00 / $3.50</span></div>
+          <p class="desc">Espresso + hot water.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="espresso" data-name="Macchiato" data-price="3.25">
+          <div class="item-top"><h3>Macchiato</h3><span class="price">$3.25 / $3.75</span></div>
+          <p class="desc">Espresso with a touch of foam.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="espresso" data-name="Cappuccino" data-price="3.75">
+          <div class="item-top"><h3>Cappuccino</h3><span class="price">$3.75 / $4.50</span></div>
+          <p class="desc">Rich espresso, silky foam.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="espresso" data-name="Latte" data-price="4.00">
+          <div class="item-top"><h3>Latte</h3><span class="price">$4.00 / $4.75</span></div>
+          <p class="desc">Espresso + steamed milk.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="espresso" data-name="Flat White" data-price="4.25">
+          <div class="item-top"><h3>Flat White</h3><span class="price">$4.25 / $4.95</span></div>
+          <p class="desc">Smooth and balanced.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="espresso" data-name="Mocha" data-price="4.50">
+          <div class="item-top"><h3>Mocha</h3><span class="price">$4.50 / $5.25</span></div>
+          <p class="desc">Chocolate + espresso.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="espresso" data-name="Caramel Latte" data-price="4.75">
+          <div class="item-top"><h3>Caramel Latte</h3><span class="price">$4.75 / $5.50</span></div>
+          <p class="desc">Sweet caramel finish.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="espresso" data-name="Vanilla Latte" data-price="4.75">
+          <div class="item-top"><h3>Vanilla Latte</h3><span class="price">$4.75 / $5.50</span></div>
+          <p class="desc">Classic vanilla vibe.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="espresso" data-name="Hazelnut Latte" data-price="4.75">
+          <div class="item-top"><h3>Hazelnut Latte</h3><span class="price">$4.75 / $5.50</span></div>
+          <p class="desc">Nutty and cozy.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Iced Coffee -->
+    <section class="section" data-section="iced">
+      <div class="section-head">
+        <h2>❄️ Iced Coffee</h2>
+        <p class="muted">Chilled, smooth, ready to roll.</p>
+      </div>
+
+      <div class="grid">
+        <article class="item" data-category="iced" data-name="Iced Americano" data-price="3.50">
+          <div class="item-top"><h3>Iced Americano</h3><span class="price">$3.50 / $4.00</span></div>
+          <p class="desc">Crisp espresso over ice.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="iced" data-name="Iced Latte" data-price="4.50">
+          <div class="item-top"><h3>Iced Latte</h3><span class="price">$4.50 / $5.25</span></div>
+          <p class="desc">Cold milk + espresso.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="iced" data-name="Iced Mocha" data-price="4.95">
+          <div class="item-top"><h3>Iced Mocha</h3><span class="price">$4.95 / $5.75</span></div>
+          <p class="desc">Chocolate chill.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="iced" data-name="Iced Caramel Latte" data-price="5.25">
+          <div class="item-top"><h3>Iced Caramel Latte</h3><span class="price">$5.25 / $6.00</span></div>
+          <p class="desc">Sweet + cold = perfect.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="iced" data-name="Cold Brew" data-price="4.25">
+          <div class="item-top"><h3>Cold Brew</h3><span class="price">$4.25 / $5.00</span></div>
+          <p class="desc">Slow brewed, super smooth.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="iced" data-name="Vanilla Cold Brew" data-price="4.75">
+          <div class="item-top"><h3>Vanilla Cold Brew</h3><span class="price">$4.75 / $5.50</span></div>
+          <p class="desc">Vanilla lift.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="iced" data-name="Salted Caramel Cold Brew" data-price="5.00">
+          <div class="item-top"><h3>Salted Caramel Cold Brew</h3><span class="price">$5.00 / $5.75</span></div>
+          <p class="desc">Sweet + salty drip.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Frappé & Blended -->
+    <section class="section" data-section="blended">
+      <div class="section-head">
+        <h2>🧊 Frappé & Blended</h2>
+        <p class="muted">Thick, cold, and addictive.</p>
+      </div>
+
+      <div class="grid">
+        <article class="item" data-category="blended" data-name="Classic Coffee Frappé" data-price="5.25">
+          <div class="item-top"><h3>Classic Coffee Frappé</h3><span class="price">$5.25</span></div>
+          <p class="desc">Coffee blended perfection.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="blended" data-name="Mocha Frappé" data-price="5.75">
+          <div class="item-top"><h3>Mocha Frappé</h3><span class="price">$5.75</span></div>
+          <p class="desc">Chocolate coffee blend.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="blended" data-name="Caramel Frappé" data-price="5.75">
+          <div class="item-top"><h3>Caramel Frappé</h3><span class="price">$5.75</span></div>
+          <p class="desc">Caramel drizzle dream.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="blended" data-name="Vanilla Frappé" data-price="5.50">
+          <div class="item-top"><h3>Vanilla Frappé</h3><span class="price">$5.50</span></div>
+          <p class="desc">Smooth vanilla chill.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="blended" data-name="Chocolate Shake" data-price="5.50">
+          <div class="item-top"><h3>Chocolate Shake</h3><span class="price">$5.50</span></div>
+          <p class="desc">Classic chocolate shake.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="blended" data-name="Oreo Shake" data-price="5.95">
+          <div class="item-top"><h3>Oreo Shake</h3><span class="price">$5.95</span></div>
+          <p class="desc">Cookies + cream hit.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tea & More -->
+    <section class="section" data-section="tea">
+      <div class="section-head">
+        <h2>🍵 Tea & More</h2>
+        <p class="muted">Calm, warm, and cozy.</p>
+      </div>
+
+      <div class="grid">
+        <article class="item" data-category="tea" data-name="English Breakfast Tea" data-price="2.75">
+          <div class="item-top"><h3>English Breakfast Tea</h3><span class="price">$2.75 / $3.25</span></div>
+          <p class="desc">Strong and classic.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="tea" data-name="Green Tea" data-price="2.75">
+          <div class="item-top"><h3>Green Tea</h3><span class="price">$2.75 / $3.25</span></div>
+          <p class="desc">Fresh and light.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="tea" data-name="Chamomile Tea" data-price="2.75">
+          <div class="item-top"><h3>Chamomile Tea</h3><span class="price">$2.75 / $3.25</span></div>
+          <p class="desc">Relax mode.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="tea" data-name="Mint Tea" data-price="2.75">
+          <div class="item-top"><h3>Mint Tea</h3><span class="price">$2.75 / $3.25</span></div>
+          <p class="desc">Cool and clean.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="tea" data-name="Chai Latte" data-price="4.50">
+          <div class="item-top"><h3>Chai Latte</h3><span class="price">$4.50 / $5.25</span></div>
+          <p class="desc">Spiced and creamy.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="tea" data-name="Matcha Latte" data-price="4.95">
+          <div class="item-top"><h3>Matcha Latte</h3><span class="price">$4.95 / $5.75</span></div>
+          <p class="desc">Green energy boost.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="tea" data-name="Hot Chocolate" data-price="4.00">
+          <div class="item-top"><h3>Hot Chocolate</h3><span class="price">$4.00 / $4.75</span></div>
+          <p class="desc">Warm chocolate comfort.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Refreshers -->
+    <section class="section" data-section="refreshers">
+      <div class="section-head">
+        <h2>🥤 Refreshers</h2>
+        <p class="muted">Fruit, ice, and good vibes.</p>
+      </div>
+
+      <div class="grid">
+        <article class="item" data-category="refreshers" data-name="Lemonade" data-price="3.25">
+          <div class="item-top"><h3>Lemonade</h3><span class="price">$3.25 / $3.75</span></div>
+          <p class="desc">Fresh and bright.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="refreshers" data-name="Strawberry Lemonade" data-price="3.75">
+          <div class="item-top"><h3>Strawberry Lemonade</h3><span class="price">$3.75 / $4.25</span></div>
+          <p class="desc">Sweet berry twist.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="refreshers" data-name="Peach Iced Tea" data-price="3.50">
+          <div class="item-top"><h3>Peach Iced Tea</h3><span class="price">$3.50 / $4.00</span></div>
+          <p class="desc">Peachy chill.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="refreshers" data-name="Mango Refresher" data-price="4.25">
+          <div class="item-top"><h3>Mango Refresher</h3><span class="price">$4.25</span></div>
+          <p class="desc">Tropical hit.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="refreshers" data-name="Berry Refresher" data-price="4.25">
+          <div class="item-top"><h3>Berry Refresher</h3><span class="price">$4.25</span></div>
+          <p class="desc">Berry blend.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Bakery -->
+    <section class="section" data-section="bakery">
+      <div class="section-head">
+        <h2>🥐 Bakery</h2>
+        <p class="muted">Fresh baked goodness.</p>
+      </div>
+
+      <div class="grid">
+        <article class="item" data-category="bakery" data-name="Butter Croissant" data-price="2.75">
+          <div class="item-top"><h3>Butter Croissant</h3><span class="price">$2.75</span></div>
+          <p class="desc">Flaky, buttery layers.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="bakery" data-name="Chocolate Croissant" data-price="3.25">
+          <div class="item-top"><h3>Chocolate Croissant</h3><span class="price">$3.25</span></div>
+          <p class="desc">Melted chocolate inside.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="bakery" data-name="Cinnamon Roll" data-price="3.50">
+          <div class="item-top"><h3>Cinnamon Roll</h3><span class="price">$3.50</span></div>
+          <p class="desc">Sweet cinnamon swirl.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="bakery" data-name="Blueberry Muffin" data-price="3.25">
+          <div class="item-top"><h3>Lotus Crepe</h3><span class="price">$3.25</span></div>
+          <p class="desc">Soft with blueberries.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="bakery" data-name="Chocolate Muffin" data-price="3.25">
+          <div class="item-top"><h3>Chocolate Crepe</h3><span class="price">$3.25</span></div>
+          <p class="desc">Rich chocolate bite.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="bakery" data-name="Brownie" data-price="3.50">
+          <div class="item-top"><h3>Brownie</h3><span class="price">$3.50</span></div>
+          <p class="desc">Fudgy and thick.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="bakery" data-name="Cookies (2 pcs)" data-price="2.50">
+          <div class="item-top"><h3>Cookies (2 pcs)</h3><span class="price">$2.50</span></div>
+          <p class="desc">Crunchy + chewy mix.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+
+
+
+    <!-- Add-ons -->
+    <section class="section" id="addons" data-section="addons">
+      <div class="section-head">
+        <h2>⭐ Add-ons</h2>
+        <p class="muted">Upgrade your drink.</p>
+      </div>
+
+      <div class="grid">
+        <article class="item" data-category="addons" data-name="Extra Espresso Shot" data-price="1.00">
+          <div class="item-top"><h3>Extra Espresso Shot</h3><span class="price">+$1.00</span></div>
+          <p class="desc">More power.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="addons" data-name="Extra Syrup (Vanilla/Caramel/Hazelnut)" data-price="0.50">
+          <div class="item-top"><h3>Extra Syrup (Vanilla/Caramel/Hazelnut)</h3><span class="price">+$0.50</span></div>
+          <p class="desc">Sweeten it up.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="addons" data-name="Whipped Cream" data-price="0.50">
+          <div class="item-top"><h3>Whipped Cream</h3><span class="price">+$0.50</span></div>
+          <p class="desc">Creamy top.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="addons" data-name="Oat / Almond Milk" data-price="0.75">
+          <div class="item-top"><h3>Oat / Almond Milk</h3><span class="price">+$0.75</span></div>
+          <p class="desc">Dairy-free option.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+
+        <article class="item" data-category="addons" data-name="Extra Caramel/Chocolate Drizzle" data-price="0.50">
+          <div class="item-top"><h3>Extra Caramel/Chocolate Drizzle</h3><span class="price">+$0.50</span></div>
+          <p class="desc">More sauce.</p>
+          <button class="add-btn" type="button">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Drive & Drip</h3>
+        <p class="muted">Open daily • 7:00 AM – 11:00 PM</p>
+        <p class="muted">📍 Tyre,Borje AL-shamale Road • ☎️ +961 76 717 577</p>
+      </div>
+      <p class="muted small">© <span id="year"></span> Drive & Drip. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- CART PANEL -->
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" id="closeCartBtn" type="button">✕</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <div class="field">
+  <label for="customerLocation">Location / Address</label>
+  <input id="customerLocation" type="text" placeholder="Area, street, building..." />
+</div>
+
+
+      <button class="checkout-btn" id="checkoutBtn" type="button">Checkout</button>
+      <button class="clear-cart-btn" id="clearCartBtn" type="button">Clear Cart</button>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
